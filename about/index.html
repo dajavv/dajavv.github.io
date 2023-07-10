@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-
-
-<html theme="dark" showBanner="true" hasBanner="true" > 
-<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<!DOCTYPE html><html theme="dark" showbanner="true" hasbanner="true"><head><link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="/fontawesome/css/brands.css" rel="stylesheet">
 <link href="/fontawesome/css/solid.css" rel="stylesheet">
-<script src="/js/color.global.min.js" ></script>
-<script src="/js/load-settings.js" ></script>
-<head>
+
+
+
   <meta charset="utf-8">
   
   
@@ -23,9 +19,8 @@
 <meta property="article:published_time" content="2023-07-08T19:39:47.000Z">
 <meta property="article:modified_time" content="2023-07-08T21:35:06.876Z">
 <meta property="article:author" content="浅笑笑笑">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/%5Cassets%5Clogo.png">
@@ -52,7 +47,7 @@
  
    
   <div id="main-grid" class="shadow   ">
-    <div id="nav" class=""  >
+    <div id="nav" class="">
       <navbar id="navbar">
   <nav id="title-nav">
     <a href="/">
@@ -71,10 +66,6 @@
     
       <a class="main-nav-link" href="/archives">归档</a>
     
-      <a class="main-nav-link" href="/friendLink">友链</a>
-    
-      <a class="main-nav-link" href="/">留言</a>
-    
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
@@ -83,10 +74,6 @@
       <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
       <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
     </a>
-    
-      <a id="nav-rss-link" class="nav-icon mobile-hide" href="/atom.xml" title="RSS 订阅">
-        <span class="material-symbols-rounded rss">rss_feed</span>
-      </a>
     
     <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
       <span class="material-symbols-rounded">search</span>
@@ -103,24 +90,12 @@
     
       <a class="nav-dropdown-link" href="/archives">归档</a>
     
-      <a class="nav-dropdown-link" href="/friendLink">友链</a>
-    
-      <a class="nav-dropdown-link" href="/">留言</a>
-    
       <a class="nav-dropdown-link" href="/about">关于</a>
     
-    
-      <a class="nav-dropdown-link" href="/atom.xml" title="RSS 订阅">RSS</a>
      
     </div>
 </div>
-<script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
-  let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
-    dropdownEle.classList.toggle("hidden");
-  }
-</script>
+
     </div>
     <div id="sidebar-wrapper">
       <sidebar id="sidebar">
@@ -129,7 +104,7 @@
   <div class="info-card">
     <div class="avatar">
       
-        <image src=/%5Cassets%5Clogo.png></image>
+        <img src="/%5Cassets%5Clogo.png">
       
       <div class="img-dim"></div>
     </div>
@@ -143,7 +118,7 @@
         
           <a class="link-btn" target="_blank" rel="noopener" href="https://store.steampowered.com" title="Steam"><i class="fa-brands fa-steam"></i></a>
         
-          <a class="link-btn" target="_blank" rel="noopener" href="https://github.com" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="link-btn" target="_blank" rel="noopener" href="https://github.com/dajavv" title="GitHub"><i class="fa-brands fa-github"></i></a>
          
       </div>  
     </div>
@@ -156,13 +131,20 @@
       
 
 
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">分类</h3>
+      <div class="category-box"></div>
+    </div>
+  </div>
+
 
     
       
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">标签</h3>
-      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/makdown/" rel="tag">makdown</a></li></ul>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/md%E7%9A%84%E4%B9%A6%E5%86%99/" rel="tag">md的书写</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" rel="tag">博客配置</a></li></ul>
     </div>
   </div>
 
@@ -175,8 +157,8 @@
       
       
         <a class="archive-link" href="/archives/2023/07 ">
-          七月 2023 
-          <div class="archive-count">6 </div>
+          七月 2023
+          <div class="archive-count">9 </div>
         </a>
       
     </div>
@@ -191,23 +173,23 @@
       <ul>
         
           <li>
-            <a href="/2023/07/09/23123/">博客1</a>
+            <a href="/2023/07/11/%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E5%B1%9E%E6%80%A7/">文章的头部属性</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/11/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/">项目结构</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/11/post-title-with-whitespace/">创建文章与界面</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/10/README.zh-CN/">(no title)</a>
           </li>
         
           <li>
             <a href="/2023/07/09/makdown%E7%9A%84%E4%B9%A6%E5%86%99/">makdown的书写</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/09/%E5%8D%9A%E5%AE%A21/">博客1</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/09/%E5%8D%9A%E5%AE%A23/">博客1</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/09/My-New-Post/">My New Post</a>
           </li>
         
       </ul>
@@ -221,7 +203,7 @@
     <div id="content-body">
        
 
-<article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
    
   <div class="article-inner">
     <div class="article-main">
@@ -238,7 +220,7 @@
   
 </div>
 
-        <div class='meta-info-bar'>
+        <div class="meta-info-bar">
           <div class="meta-info">
   <time class="dt-published" datetime="2023-07-08T19:39:47.000Z" itemprop="datePublished">2023-07-09</time>
 </div>
@@ -256,10 +238,11 @@
         </div>
         
 
+
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <p>而是通常用于描述色相的HSL（Hue, Saturation, Lightness）</p>
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><p>而是通常用于描述色相的HSL（Hue, Saturation, Lightness）</p>
 
         
       </div>
@@ -282,8 +265,8 @@
   
   <div id="footer-info" class="inner">
     
-    &copy; 2023 浅笑笑笑<br>
-    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+    © 2023 浅笑笑笑<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> &amp; Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>
 
@@ -294,7 +277,20 @@
     </button>
 </div>
 
-<script>
+
+
+  </div>
+  
+
+
+<script src="/bundle.js"></script><script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+;
+
     function topFunction() {
         window.scroll({ top: 0, behavior: 'smooth' });
     }
@@ -309,9 +305,4 @@
     window.onscroll = function() {
         scrollFunction();
     }
-</script>
-
-  </div>
-  <script src="/js/light-dark-switch.js"></script>
-</body>
-</html>
+</script></body></html>
