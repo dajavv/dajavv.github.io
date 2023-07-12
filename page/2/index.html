@@ -68,22 +68,22 @@
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
-  <nav id="sub-nav">
+  <nav id="sub-nav"><!--导航栏图标-->
     <a id="theme-btn" class="nav-icon">
-      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
-      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span><!--白天-->
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span><!--黑夜-->
     </a>
     
-    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+    <a id="nav-search-btn" class="nav-icon" title="搜索"><!--搜索-->
       <span class="material-symbols-rounded">search</span>
     </a>
     <div id="nav-menu-btn" class="nav-icon">
-      <span class="material-symbols-rounded">menu</span>
+      <span class="material-symbols-rounded">menu</span><!--菜单栏-->
     </div>
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
-  <div id="dropdown-link-list">
+  <div id="dropdown-link-list"><!--下拉菜单-->
     
       <a class="nav-dropdown-link" href="/">主页</a>
     
@@ -131,7 +131,7 @@
     <div class="widget">
         <h3 class="widget-title">公告</h3>
         <div class="info"><!--信息-->
-            公告公告公告公告公告<!--公告-->
+            加载有点慢。多等等图标就加载出来了。。。不影响不影响<!--公告-->
         </div>
     </div>
 </div>
@@ -231,6 +231,7 @@
     <div id="content-body">
       
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -238,7 +239,7 @@
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -259,10 +260,10 @@
     未分类 
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            78 字
+            78 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -270,7 +271,7 @@
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post$ hexo new "My New Post"
@@ -285,7 +286,7 @@ More info: Generating
 Deploy to remote sites$ hexo deploy
 
 More info: Deployment
-
+<!--内容预览-->
           </div>
         
       </div>
@@ -293,9 +294,11 @@ More info: Deployment
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/09/hello-world/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/09/hello-world/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -308,6 +311,7 @@ More info: Deployment
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-建站日志" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -315,7 +319,7 @@ More info: Deployment
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -336,10 +340,10 @@ More info: Deployment
   <a class="meta-cate-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            60 字
+            60 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -347,13 +351,13 @@ More info: Deployment
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             博客的建立与部署博客基于Hexo博客框架建立,使用GitHub进行静态部署
 图床博客使用国内图床进行加载图床链接
 建站日期2023年7月8日
 日志待续
-
+<!--内容预览-->
           </div>
         
       </div>
@@ -361,9 +365,11 @@ More info: Deployment
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/08/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/08/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -420,9 +426,9 @@ More info: Deployment
 
 
 <script src="/bundle.js"></script><script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownBtn = document.getElementById("nav-menu-btn");/*下拉按键*/
   let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
+  dropdownBtn.onclick = function() {/*菜单栏点击*/
     dropdownEle.classList.toggle("hidden");
   }
 ;

@@ -68,22 +68,22 @@
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
-  <nav id="sub-nav">
+  <nav id="sub-nav"><!--导航栏图标-->
     <a id="theme-btn" class="nav-icon">
-      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
-      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span><!--白天-->
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span><!--黑夜-->
     </a>
     
-    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+    <a id="nav-search-btn" class="nav-icon" title="搜索"><!--搜索-->
       <span class="material-symbols-rounded">search</span>
     </a>
     <div id="nav-menu-btn" class="nav-icon">
-      <span class="material-symbols-rounded">menu</span>
+      <span class="material-symbols-rounded">menu</span><!--菜单栏-->
     </div>
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
-  <div id="dropdown-link-list">
+  <div id="dropdown-link-list"><!--下拉菜单-->
     
       <a class="nav-dropdown-link" href="/">主页</a>
     
@@ -131,7 +131,7 @@
     <div class="widget">
         <h3 class="widget-title">公告</h3>
         <div class="info"><!--信息-->
-            公告公告公告公告公告<!--公告-->
+            加载有点慢。多等等图标就加载出来了。。。不影响不影响<!--公告-->
         </div>
     </div>
 </div>
@@ -300,9 +300,9 @@
 
 
 <script src="/bundle.js"></script><script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownBtn = document.getElementById("nav-menu-btn");/*下拉按键*/
   let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
+  dropdownBtn.onclick = function() {/*菜单栏点击*/
     dropdownEle.classList.toggle("hidden");
   }
 ;

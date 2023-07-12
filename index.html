@@ -68,22 +68,22 @@
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
-  <nav id="sub-nav">
+  <nav id="sub-nav"><!--导航栏图标-->
     <a id="theme-btn" class="nav-icon">
-      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
-      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span><!--白天-->
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span><!--黑夜-->
     </a>
     
-    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+    <a id="nav-search-btn" class="nav-icon" title="搜索"><!--搜索-->
       <span class="material-symbols-rounded">search</span>
     </a>
     <div id="nav-menu-btn" class="nav-icon">
-      <span class="material-symbols-rounded">menu</span>
+      <span class="material-symbols-rounded">menu</span><!--菜单栏-->
     </div>
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
-  <div id="dropdown-link-list">
+  <div id="dropdown-link-list"><!--下拉菜单-->
     
       <a class="nav-dropdown-link" href="/">主页</a>
     
@@ -131,7 +131,7 @@
     <div class="widget">
         <h3 class="widget-title">公告</h3>
         <div class="info"><!--信息-->
-            公告公告公告公告公告<!--公告-->
+            加载有点慢。多等等图标就加载出来了。。。不影响不影响<!--公告-->
         </div>
     </div>
 </div>
@@ -231,6 +231,7 @@
     <div id="content-body">
       
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-原神小助手" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -238,7 +239,7 @@
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -259,20 +260,20 @@
   <a class="meta-cate-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            70 字
+            70 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
-        
+        <!--文章选项中的tag-->
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E7%A5%9E/" rel="tag">原神</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>
 
 
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             简介
 基于图像识别和模拟按键的多功能原神自动辅助操作,包括自动战斗,自动刷秘境,自动刷大世界材料。
@@ -281,7 +282,7 @@
 Github项目链接[genshin_impact_assistant](https://github.com/infstellar/genshin_impact_assistant]
 官方项目中文文档[https://genshinimpactassistant.github.io/GIA-Document/#/]
 
-
+<!--内容预览-->
           </div>
         
       </div>
@@ -289,9 +290,11 @@ Github项目链接[genshin_impact_assistant](https://github.com/infstellar/gensh
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E5%8E%9F%E7%A5%9E%E5%B0%8F%E5%8A%A9%E6%89%8B/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/11/%E5%8E%9F%E7%A5%9E%E5%B0%8F%E5%8A%A9%E6%89%8B/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -304,6 +307,7 @@ Github项目链接[genshin_impact_assistant](https://github.com/infstellar/gensh
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-胡桃工具箱" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -311,7 +315,7 @@ Github项目链接[genshin_impact_assistant](https://github.com/infstellar/gensh
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -332,20 +336,20 @@ Github项目链接[genshin_impact_assistant](https://github.com/infstellar/gensh
   <a class="meta-cate-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            128 字
+            128 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
-        
+        <!--文章选项中的tag-->
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E7%A5%9E/" rel="tag">原神</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>
 
 
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             
 简介
@@ -355,7 +359,7 @@ Github项目链接[genshin_impact_assistant](https://github.com/infstellar/gensh
 Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 官方项目中文文档[https://hut.ao/zh/]
 
-
+<!--内容预览-->
           </div>
         
       </div>
@@ -363,10 +367,14 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E8%83%A1%E6%A1%83%E5%B7%A5%E5%85%B7%E7%AE%B1/">
-      
-      <i class="fa-solid fa-angle-right non-pic"></i>
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  with-pic  " style="background-image: url(https://img1.8jppeg.com/images/64aecab33389e89b4a2a7c41.jpg)" href="/2023/07/11/%E8%83%A1%E6%A1%83%E5%B7%A5%E5%85%B7%E7%AE%B1/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--判断有没有封面，这里会添加进入箭头-->
+      <div class="overlay">
+        <i class="fa-solid fa-angle-right with-pic"></i>
+      </div>
       
     </a>
     
@@ -378,6 +386,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-makdown的书写(三)" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -385,7 +394,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -406,10 +415,10 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
   <a class="meta-cate-link" href="/categories/md%E7%9A%84%E4%B9%A6%E5%86%99/">md的书写</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            17 字
+            17 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -417,7 +426,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             ![图片描述](https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg)
 
@@ -432,7 +441,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
 
 
-
+<!--内容预览-->
           </div>
         
       </div>
@@ -440,9 +449,11 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%B8%89)/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/11/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%B8%89)/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -455,6 +466,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-测试" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -462,7 +474,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -483,10 +495,10 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
   <a class="meta-cate-link" href="/categories/test/">test</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            0 字
+            0 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -494,9 +506,9 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
-            
+            <!--内容预览-->
           </div>
         
       </div>
@@ -504,9 +516,11 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E6%B5%8B%E8%AF%95/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/11/%E6%B5%8B%E8%AF%95/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -519,6 +533,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-文章的头部属性" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -526,7 +541,7 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -547,10 +562,10 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
   <a class="meta-cate-link" href="/categories/Hexo/">Hexo</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            91 字
+            181 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -558,35 +573,22 @@ Github项目链接[https://github.com/DGP-Studio/Snap.Hutao]
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
-          <div class="truncate-text">
-            头部配置layout: config.default_layout #默认值于config文件中配置， 布局
-title: 文章名称
-date: 2023-07-09 05:00:34 #日期
-updated: 2023-07-11 18:25:12 #更新日期，用不到
-标签tags: [tag1,tag2] #标签
-或
-tags:
-- tag1
-- tag2
-
-分类category: test 
-或
-category:
-    - [层级1, 层级2,层级3,层级4,层级5]
-    - [层级1, 层级2,层级3,层级4]
-
-          </div>
+        <!--判断excerpt是否有值-->
+          md文件头部属性的属性传递<!--摘要-->
         
       </div>
 
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E5%B1%9E%E6%80%A7/">
-      
-      <i class="fa-solid fa-angle-right non-pic"></i>
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  with-pic  " style="background-image: url(https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg)" href="/2023/07/11/%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E5%B1%9E%E6%80%A7/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--判断有没有封面，这里会添加进入箭头-->
+      <div class="overlay">
+        <i class="fa-solid fa-angle-right with-pic"></i>
+      </div>
       
     </a>
     
@@ -598,6 +600,7 @@ category:
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-项目结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -605,7 +608,7 @@ category:
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -626,10 +629,10 @@ category:
   <a class="meta-cate-link" href="/categories/Hexo/">Hexo</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            195 字
+            263 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -637,14 +640,24 @@ category:
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
-            常用命令项目结构分为静态和Hexo两部分，静态文章用于部署，这是常用的命令
-hexo g 生成静态网页
-hexo d 部署git
-hexo s 启动本地服务器
-项目结构参数	描述	默认值source_dir	资源文件夹，这个文件夹用来存放内容。	sourcepublic_dir	公共文件夹，这个文件夹用于存放生成的站点文件。	publictag_dir	标签文件夹	tagsarchive_dir	归档文件夹	archivescategory_dir	分类文件夹	categoriescode_dir	Include code 文件夹，source_dir 下的子目录	downloads/codei18n_dir	国际化（i18n）文件夹	:langskip_render	跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。
-
+            Hexo二次开发文档中文文档 https://docs.kaitaku.xyz/github链接 https://github.com/theme-shoka-x/hexo-theme-shokaX
+配置文件的数据传递theme. 主题配置文件
+post.  文章头部属性
+&lt;%- __('words') %&gt; 表示languages国际化目录中的文字
+项目结构ShokaX的目录结构(仅包含对开发重要的部分)如下:
+- .github # issues模板、CI工作流等存储位置
+- languages # 国际化文件储存位置
+- layout # 模板储存位置
+- scripts # hexo脚本储存位置
+- source # 前端文件位置
+- package.json # npm包json
+- tsconfig.json # typescript编译配置
+- .eslintrc.cjs # eslint配置
+- _config.yml # hexo主题配置文件
+- _images.yml # 图床配置文件
+layout目录(模版目录)采用了组件化开发，...<!--内容预览-->
           </div>
         
       </div>
@@ -652,9 +665,11 @@ hexo s 启动本地服务器
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/11/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -667,6 +682,7 @@ hexo s 启动本地服务器
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-创建文章与界面" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -674,7 +690,7 @@ hexo s 启动本地服务器
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -695,10 +711,10 @@ hexo s 启动本地服务器
   <a class="meta-cate-link" href="/categories/Hexo/">Hexo</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            123 字
+            42 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -706,34 +722,13 @@ hexo s 启动本地服务器
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             文章的创建hexo new "文章名称"
 hexo new '新文件夹'
 hexo list &lt;属性&gt; 查看
 hexo new page about 创建页面
-图床![图片描述](图片链接)
-
-layout目录(核心界面)采用了组件化开发，使用配置文件中的数据进行传值显示 layout
-|   archive.ejs
-|   category.ejs
-|   index.ejs
-|   layout.ejs
-|   page.ejs
-|   post.ejs
-|   tag.ejs
-|
-+---_partial
-|   |   archive-post.ejs
-|   |   archive.ejs
-|   |   article.ejs
-|   |   back-to-top.ejs
-|   |   banner.ejs
-|   |   footer.ejs #底部栏
-|   |   gauges-analytics.ejs
-|   |   google-analytics.ejs
-|   |   head.ejs
-|   |  ...
+<!--内容预览-->
           </div>
         
       </div>
@@ -741,9 +736,11 @@ layout目录(核心界面)采用了组件化开发，使用配置文件中的数
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/11/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E4%B8%8E%E7%95%8C%E9%9D%A2/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/11/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%E4%B8%8E%E7%95%8C%E9%9D%A2/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -756,6 +753,82 @@ layout目录(核心界面)采用了组件化开发，使用配置文件中的数
 
 
   
+<!--post.photos为一个数组，赋值给cover-->
+<!--文章-->
+<article id="post-什么是.md文件" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+  
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/07/09/%E4%BB%80%E4%B9%88%E6%98%AF.md%E6%96%87%E4%BB%B6/">什么是.md文件</a>
+      </h1>
+    
+  
+</div>
+
+        <div class="meta-info-bar">
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-07-08T21:00:34.000Z" itemprop="datePublished">2023-07-09</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/md%E7%9A%84%E4%B9%A6%E5%86%99/">md的书写</a>
+   
+</div>
+<!--tag-->
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            426 字<!--获取文章中的文字数量，字数-->
+          </div>
+        </div>
+        
+
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        <!--如果没有excerpt则渲染内容前500字-->
+          <div class="truncate-text">
+            Markdown编辑器Markdown编辑在Hexo博客中，.md（Markdown）文件用于编写文章内容。Markdown是一种轻量级的标记语言，易于使用和阅读。
+要创建一个.md文件，请按照以下步骤操作：
+打开你的Hexo博客的源文件目录。默认情况下，源文件目录位于博客根目录下的”source”文件夹中。
+在”source”文件夹中，找到你想创建.md文件的所属目录。这可以是”_posts”目录或自定义的分类目录等。
+在所选目录中，创建一个新的文本文件，并将其命名为你想要的文件名，以”.md”作为文件扩展名。例如，你可以创建一个名为”hello-world.md”的文件。
+使用你喜欢的编辑器（例如文本编辑器或Markdown编辑器），打开新创建的.md文件。
+在.md文件中使用Markdown语法编写你的文章内容。你可以使用标题、段落、链接、图像、列表等Markdown语法来格式化文章。
+保存文件。
+在Hexo中，创建和编写.md文件是为了生成静态HTML页面。当你完成编辑和保存.md文件后，只需使用Hexo命令生成网站即可，Hexo将自动将.md文件转换为HTML页面，该页...<!--内容预览-->
+          </div>
+        
+      </div>
+
+      
+    </div>
+
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/09/%E4%BB%80%E4%B9%88%E6%98%AF.md%E6%96%87%E4%BB%B6/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
+      <i class="fa-solid fa-angle-right non-pic"></i>
+      
+    </a>
+    
+  </div>
+  
+</article>
+
+
+
+
+  
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-makdown的书写(二)" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -763,7 +836,7 @@ layout目录(核心界面)采用了组件化开发，使用配置文件中的数
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -784,10 +857,10 @@ layout目录(核心界面)采用了组件化开发，使用配置文件中的数
   <a class="meta-cate-link" href="/categories/md%E7%9A%84%E4%B9%A6%E5%86%99/">md的书写</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            543 字
+            543 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -795,7 +868,7 @@ layout目录(核心界面)采用了组件化开发，使用配置文件中的数
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
             一、Markdown简介Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
 Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。
@@ -818,7 +891,7 @@ Markdown编写python语法
 
 ###### 六级标题
 显示效果：
-一级标题二级标题三级标题四级标题五级标题六级标题三、Markdo...
+一级标题二级标题三级标题四级标题五级标题六级标题三、Markdo...<!--内容预览-->
           </div>
         
       </div>
@@ -826,9 +899,11 @@ Markdown编写python语法
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/09/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%BA%8C)/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/09/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%BA%8C)/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -841,78 +916,7 @@ Markdown编写python语法
 
 
   
-<!--文章-->
-<article id="post-什么是.md文件" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-  
-  <div class="article-inner">
-    <div class="article-main">
-      <header class="article-header">
-        
-<div class="main-title-bar">
-  <div class="main-title-dot"></div>
-  
-    
-      <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/07/09/%E4%BB%80%E4%B9%88%E6%98%AF.md%E6%96%87%E4%BB%B6/">什么是.md文件</a>
-      </h1>
-    
-  
-</div>
-
-        <div class="meta-info-bar">
-          <div class="meta-info">
-  <time class="dt-published" datetime="2023-07-08T21:00:34.000Z" itemprop="datePublished">2023-07-09</time>
-</div>
-          <div class="need-seperator meta-info">
-            <div class="meta-cate-flex">
-  
-  <a class="meta-cate-link" href="/categories/md%E7%9A%84%E4%B9%A6%E5%86%99/">md的书写</a>
-   
-</div>
-
-          </div>
-          <div class="wordcount need-seperator meta-info">
-            426 字
-          </div>
-        </div>
-        
-
-
-      </header>
-      <div class="e-content article-entry" itemprop="articleBody">
-        
-          <div class="truncate-text">
-            Markdown编辑器Markdown编辑在Hexo博客中，.md（Markdown）文件用于编写文章内容。Markdown是一种轻量级的标记语言，易于使用和阅读。
-要创建一个.md文件，请按照以下步骤操作：
-打开你的Hexo博客的源文件目录。默认情况下，源文件目录位于博客根目录下的”source”文件夹中。
-在”source”文件夹中，找到你想创建.md文件的所属目录。这可以是”_posts”目录或自定义的分类目录等。
-在所选目录中，创建一个新的文本文件，并将其命名为你想要的文件名，以”.md”作为文件扩展名。例如，你可以创建一个名为”hello-world.md”的文件。
-使用你喜欢的编辑器（例如文本编辑器或Markdown编辑器），打开新创建的.md文件。
-在.md文件中使用Markdown语法编写你的文章内容。你可以使用标题、段落、链接、图像、列表等Markdown语法来格式化文章。
-保存文件。
-在Hexo中，创建和编写.md文件是为了生成静态HTML页面。当你完成编辑和保存.md文件后，只需使用Hexo命令生成网站即可，Hexo将自动将.md文件转换为HTML页面，该页...
-          </div>
-        
-      </div>
-
-      
-    </div>
-
-    
-    <a class="right-panel  non-pic  " href="/2023/07/09/%E4%BB%80%E4%B9%88%E6%98%AF.md%E6%96%87%E4%BB%B6/">
-      
-      <i class="fa-solid fa-angle-right non-pic"></i>
-      
-    </a>
-    
-  </div>
-  
-</article>
-
-
-
-
-  
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-makdown的书写(一)" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
@@ -920,7 +924,7 @@ Markdown编写python语法
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -941,10 +945,10 @@ Markdown编写python语法
   <a class="meta-cate-link" href="/categories/md%E7%9A%84%E4%B9%A6%E5%86%99/">md的书写</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            524 字
+            562 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -952,9 +956,12 @@ Markdown编写python语法
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
-        
+        <!--如果没有excerpt则渲染内容前500字-->
           <div class="truncate-text">
-            hexo中创建页面hexo new page friendLink
+            项目结构分为静态和Hexo两部分，静态文章用于部署
+用的命令hexo g 生成静态网页
+hexo d 部署git
+hexo s 启动本地服务器
 
 
 
@@ -975,13 +982,11 @@ bilibili视频引入标签your_video_id 是b站的bv号或av号。
                 
                     
                         
-                        1475
+                        1476
                     
                         
                         0
-                
-                    视频
- ...
+   ...<!--内容预览-->
           </div>
         
       </div>
@@ -989,9 +994,11 @@ bilibili视频引入标签your_video_id 是b站的bv号或av号。
       
     </div>
 
-    
-    <a class="right-panel  non-pic  " href="/2023/07/09/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%B8%80)/">
-      
+    <!--普通选项样式-->
+    <!--配置文件主题是否为detail详细，并且判断是否在页面中-->
+    <a class="right-panel  non-pic  " href="/2023/07/09/makdown%E7%9A%84%E4%B9%A6%E5%86%99(%E4%B8%80)/"><!--构造文章url,生成一个有图片或无图片的选项卡，
+    在开头会判断该数据是否为一个数组，获取数组第一个元素作为背景图片的url-->
+      <!--没有封面，直接插入箭头-->
       <i class="fa-solid fa-angle-right non-pic"></i>
       
     </a>
@@ -1048,9 +1055,9 @@ bilibili视频引入标签your_video_id 是b站的bv号或av号。
 
 
 <script src="/bundle.js"></script><script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownBtn = document.getElementById("nav-menu-btn");/*下拉按键*/
   let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
+  dropdownBtn.onclick = function() {/*菜单栏点击*/
     dropdownEle.classList.toggle("hidden");
   }
 ;

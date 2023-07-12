@@ -76,22 +76,22 @@
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
-  <nav id="sub-nav">
+  <nav id="sub-nav"><!--导航栏图标-->
     <a id="theme-btn" class="nav-icon">
-      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
-      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span><!--白天-->
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span><!--黑夜-->
     </a>
     
-    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+    <a id="nav-search-btn" class="nav-icon" title="搜索"><!--搜索-->
       <span class="material-symbols-rounded">search</span>
     </a>
     <div id="nav-menu-btn" class="nav-icon">
-      <span class="material-symbols-rounded">menu</span>
+      <span class="material-symbols-rounded">menu</span><!--菜单栏-->
     </div>
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
-  <div id="dropdown-link-list">
+  <div id="dropdown-link-list"><!--下拉菜单-->
     
       <a class="nav-dropdown-link" href="/">主页</a>
     
@@ -139,7 +139,7 @@
     <div class="widget">
         <h3 class="widget-title">公告</h3>
         <div class="info"><!--信息-->
-            公告公告公告公告公告<!--公告-->
+            加载有点慢。多等等图标就加载出来了。。。不影响不影响<!--公告-->
         </div>
     </div>
 </div>
@@ -238,16 +238,18 @@
     </div>
     <div id="content-body">
       
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-建站日志" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
     
+
   
   <div class="article-inner">
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -268,10 +270,10 @@
   <a class="meta-cate-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            60 字
+            60 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -284,7 +286,7 @@
 <h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><p>博客使用国内图床进行加载<br><a target="_blank" rel="noopener" href="https://up.loveimgmoe.com/">图床链接</a></p>
 <h1 id="建站日期"><a href="#建站日期" class="headerlink" title="建站日期"></a>建站日期</h1><p>2023年7月8日</p>
 <h1 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h1><p>待续</p>
-
+<!--开启detail详细模式,并且没有设置摘要属性，显示全部内容-->
         
       </div>
 
@@ -295,25 +297,25 @@
   </div>
   
     
-<nav id="article-nav">
+<nav id="article-nav"><!--文章底部的左右跳转导航-->
   <a class="article-nav-btn left " href="/2023/07/09/hello-world/" title="Hello World">
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
       
         Hello World
-        
+      
     </p>
   </a>
   <a class="article-nav-btn right  disabled ">
 
     <p class="title-text">
-        
+      
     </p>
-    <i class="fa-solid fa-angle-right"></i>
+    <i class="fa-solid fa-angle-right"></i><!--向右-->
   </a>
 </nav>
 
-
+<!--导入组件-->
   
 </article>
 
@@ -349,9 +351,9 @@
 
 
 <script src="/bundle.js"></script><script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownBtn = document.getElementById("nav-menu-btn");/*下拉按键*/
   let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
+  dropdownBtn.onclick = function() {/*菜单栏点击*/
     dropdownEle.classList.toggle("hidden");
   }
 ;

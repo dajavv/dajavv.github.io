@@ -1,4 +1,4 @@
-<!DOCTYPE html><html theme="dark" showbanner="true" hasbanner="true"><head><link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
+<!DOCTYPE html><html theme="dark" showbanner="true" hasbanner="desktop"><head><link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="/fontawesome/css/brands.css" rel="stylesheet">
 <link href="/fontawesome/css/solid.css" rel="stylesheet">
 
@@ -16,18 +16,20 @@
   
   <title>文章的头部属性 | My Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="头部配置layout: config.default_layout #默认值于config文件中配置， 布局 title: 文章名称 date: 2023-07-09 05:00:34 #日期 updated: 2023-07-11 18:25:12 #更新日期，用不到 标签tags: [tag1,tag2] #标签 或 tags: - tag1 - tag2  分类category: test">
+  <meta name="description" content="md文件头部属性的属性传递">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文章的头部属性">
 <meta property="og:url" content="https://dajavv.github.io/2023/07/11/%E6%96%87%E7%AB%A0%E7%9A%84%E5%A4%B4%E9%83%A8%E5%B1%9E%E6%80%A7/">
 <meta property="og:site_name" content="My Blog">
-<meta property="og:description" content="头部配置layout: config.default_layout #默认值于config文件中配置， 布局 title: 文章名称 date: 2023-07-09 05:00:34 #日期 updated: 2023-07-11 18:25:12 #更新日期，用不到 标签tags: [tag1,tag2] #标签 或 tags: - tag1 - tag2  分类category: test">
+<meta property="og:description" content="md文件头部属性的属性传递">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg">
 <meta property="article:published_time" content="2023-07-10T16:25:12.000Z">
-<meta property="article:modified_time" content="2023-07-11T10:04:42.679Z">
+<meta property="article:modified_time" content="2023-07-12T20:19:55.593Z">
 <meta property="article:author" content="浅笑笑笑">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg">
   
   
     <link rel="shortcut icon" href="https://img1.8jppeg.com/images/64acb6103389e89b4a1690f8.png">
@@ -76,22 +78,22 @@
       <a class="main-nav-link" href="/about">关于</a>
     
   </nav>
-  <nav id="sub-nav">
+  <nav id="sub-nav"><!--导航栏图标-->
     <a id="theme-btn" class="nav-icon">
-      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span>
-      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span>
+      <span class="material-symbols-rounded light-mode-icon">wb_sunny</span><!--白天-->
+      <span class="material-symbols-rounded dark-mode-icon">dark_mode</span><!--黑夜-->
     </a>
     
-    <a id="nav-search-btn" class="nav-icon" title="搜索" style="display: none;">
+    <a id="nav-search-btn" class="nav-icon" title="搜索"><!--搜索-->
       <span class="material-symbols-rounded">search</span>
     </a>
     <div id="nav-menu-btn" class="nav-icon">
-      <span class="material-symbols-rounded">menu</span>
+      <span class="material-symbols-rounded">menu</span><!--菜单栏-->
     </div>
   </nav>
 </navbar>
 <div id="nav-dropdown" class="hidden">
-  <div id="dropdown-link-list">
+  <div id="dropdown-link-list"><!--下拉菜单-->
     
       <a class="nav-dropdown-link" href="/">主页</a>
     
@@ -139,7 +141,7 @@
     <div class="widget">
         <h3 class="widget-title">公告</h3>
         <div class="info"><!--信息-->
-            公告公告公告公告公告<!--公告-->
+            加载有点慢。多等等图标就加载出来了。。。不影响不影响<!--公告-->
         </div>
     </div>
 </div>
@@ -238,16 +240,28 @@
     </div>
     <div id="content-body">
       
+<!--post.photos为一个数组，赋值给cover-->
 <!--文章-->
 <article id="post-文章的头部属性" class="h-entry article article-type-post" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
   
+    <!--画廊,未使用-->
+<div class="article-gallery">
+  <div class="article-gallery-photos">
     
+      <a class="article-gallery-img" rel="gallery_clk06tu4i001c2cdj5yzud349">
+        <img src="https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+
   
   <div class="article-inner">
     <div class="article-main">
       <header class="article-header">
         
-<div class="main-title-bar">
+<div class="main-title-bar"><!--主页中，文章选项标题，girl布局等分3份-->
   <div class="main-title-dot"></div>
   
     
@@ -268,10 +282,10 @@
   <a class="meta-cate-link" href="/categories/Hexo/">Hexo</a>
    
 </div>
-
+<!--tag-->
           </div>
           <div class="wordcount need-seperator meta-info">
-            91 字
+            181 字<!--获取文章中的文字数量，字数-->
           </div>
         </div>
         
@@ -283,7 +297,9 @@
           <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><h1 id="头部配置"><a href="#头部配置" class="headerlink" title="头部配置"></a>头部配置</h1><pre class="line-numbers language-angular2html" data-language="angular2html"><code class="language-angular2html">layout: config.default_layout #默认值于config文件中配置， 布局
 title: 文章名称
 date: 2023-07-09 05:00:34 #日期
-updated: 2023-07-11 18:25:12 #更新日期，用不到<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+updated: 2023-07-11 18:25:12 #更新日期，没有使用
+photos: [https://img1.8jppeg.com/images/64ad3b383389e89b4a50b8af.jpg] #封面图片
+excerpt: 摘要摘要摘要 #摘要 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><pre class="line-numbers language-none"><code class="language-none">tags: [tag1,tag2] #标签
 或
 tags:
@@ -295,7 +311,10 @@ tags:
 category:
     - [层级1, 层级2,层级3,层级4,层级5]
     - [层级1, 层级2,层级3,层级4]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="头部属性的引用"><a href="#头部属性的引用" class="headerlink" title="头部属性的引用"></a>头部属性的引用</h3><p>源自themes/vivia/layout下的_partial/article.ejs文件</p>
+<h2 id="post-属性名-调用"><a href="#post-属性名-调用" class="headerlink" title="post.属性名 (调用)"></a>post.属性名 (调用)</h2><p>该段代码使用了头部属性photos，这里对photos属性进行判断，photos属性为false 或 长度length为0则photos没有数据,返回false</p>
+<pre class="line-numbers language-angular2html" data-language="angular2html"><code class="language-angular2html">&lt;% let cover = post.photos &amp;&amp; post.photos.length %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<!--开启detail详细模式,并且没有设置摘要属性，显示全部内容-->
         
       </div>
 
@@ -306,13 +325,13 @@ category:
   </div>
   
     
-<nav id="article-nav">
+<nav id="article-nav"><!--文章底部的左右跳转导航-->
   <a class="article-nav-btn left " href="/2023/07/11/%E6%B5%8B%E8%AF%95/" title="测试">
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
       
         测试
-        
+      
     </p>
   </a>
   <a class="article-nav-btn right " href="/2023/07/11/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/" title="项目结构">
@@ -320,13 +339,13 @@ category:
     <p class="title-text">
       
         项目结构
-        
+      
     </p>
-    <i class="fa-solid fa-angle-right"></i>
+    <i class="fa-solid fa-angle-right"></i><!--向右-->
   </a>
 </nav>
 
-
+<!--导入组件-->
   
 </article>
 
@@ -362,9 +381,9 @@ category:
 
 
 <script src="/bundle.js"></script><script>
-  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownBtn = document.getElementById("nav-menu-btn");/*下拉按键*/
   let dropdownEle = document.getElementById("nav-dropdown");
-  dropdownBtn.onclick = function() {
+  dropdownBtn.onclick = function() {/*菜单栏点击*/
     dropdownEle.classList.toggle("hidden");
   }
 ;
