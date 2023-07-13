@@ -1,0 +1,19 @@
+<footer id="footer"><!--底部栏-->
+    <% if (theme.sidebar === 'bottom'){ %>
+        <%- partial('_partial/sidebar') %>
+    <% } %>
+    <div id="footer-info" class="inner">
+        <% if (theme.copyright){ %>
+            <%- render(theme.copyright, 'pug'); %>
+        <% } %>
+        &copy; 2023-<%= date(new Date(), 'YYYY') %> by <%= theme.author || config.author || config.title %><br>
+        <!--© 2023-2023 by 浅笑笑笑
+        bilibili|GitHub|GitHub-->
+        <a href="https://space.bilibili.com/59202265?spm_id_from=333.1007.0.0" target="_blank">Bilibili</a>|<a
+                href="#" target="_blank">Steam</a>|<a href="https://github.com/dajavv"
+                                                                               target="_blank">GitHub</a><br>
+        <!--        <%= __('powered_by') %> <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a-->
+        <!--                href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>-->
+
+    </div>
+</footer>

@@ -1,0 +1,128 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: My Blog #主页标题
+subtitle: 轻舟已过万重山 #网站副标题
+description: 这是浅笑笑笑的个人博客
+keywords: 博客 #关键字
+author: 浅笑笑笑
+language: zh-CN #网站语言
+timezone: '' #时区
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://dajavv.github.io/ #网址
+permalink: :year/:month/:day/:title/ #根目录
+permalink_defaults:  #文章永久链接
+pretty_urls: #永久链接中各部分的默认值 改写 permalink 的值来美化 URL
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks 是否在永久链接中保留尾部的 index.html，设置为 false 时去除
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)
+
+# Directory
+source_dir: source                    # 源文件目录
+public_dir: public                    # 输出目录
+tag_dir: tags                         # 标签页面的目录
+archive_dir: archives                 # 存档页面的目录
+category_dir: categories              # 分类页面的目录
+code_dir: downloads/code              # 代码下载的目录
+i18n_dir: :lang                       # 国际化目录
+skip_render:                          # 跳过渲染的文件/目录
+
+# Writing
+new_post_name: :title.md              # 新文章的文件名格式
+default_layout: post                # 默认的文章布局
+titlecase: false                      # 标题是否转为首字母大写
+external_link: # 外部链接的设置
+  enable: true                        # 启用打开外部链接的新选项卡
+  field: site                         # 应用于整个站点
+  exclude: ''                          # 排除的外部链接
+filename_case: 0                      # 文件名的大小写设置
+render_drafts: false                  # 是否渲染草稿
+post_asset_folder: false              # 是否在文章目录下生成资源文件夹
+relative_link: false                  # 是否将链接转换为相对链接
+future: true                          # 是否包含未来的文章
+highlight: # 代码高亮的设置
+  enable: true
+  line_number: true                   # 是否显示行号
+  auto_detect: false                  # 是否自动检测代码语言
+  tab_replace: ''                      # 替换tab键的字符
+  wrap: true                          # 是否自动换行
+  hljs: true                          # 是否使用highlight.js进行代码高亮
+  code_word_wrap: true #代码自动换行，关闭滚动条
+  highlight_copy: true # 复制按钮
+  highlight_shrink: false # true: 代码块默认不展开 / false: 代码块默认展开 | none: 展开并隐藏折叠按钮
+  #  highlight_height_limit: false # unit: px
+  exclude_languages:
+    - example
+prismjs: # Prism.js的配置（如果启用了）
+  enable: true                       # 是否启用Prism.js
+  preprocess: true                    # 是否对代码进行预处理
+  line_number: true                   # 是否显示行号
+  tab_replace: ''                      # 替换tab键的字符
+  line_threshold: 0 #
+
+# Home page setting
+index_generator: # 首页生成器的设置
+  path: ''                            # 博客首页的路径
+  per_page: 10                        # 每页显示的文章数量
+  order_by: -date                     # 文章的排序方式（按日期降序）
+
+# Category & Tag
+default_category: uncategorized       # 默认分类
+category_map:                         # 自定义分类的映射
+tag_map:                              # 自定义标签的映射
+
+# Metadata elements
+meta_generator: true                   # 是否在HTML元数据中添加生成器标记
+
+# Date / Time format
+date_format: YYYY-MM-DD                # 日期格式
+time_format: HH:mm:ss                  # 时间格式
+updated_option: 'mtime'                # 更新日期的选项（使用'mtime'获取文件的修改时间）
+
+# Pagination
+per_page: 10                           # 每页显示的文章数量
+pagination_dir: page                   # 分页路径的前缀
+
+# Include / Exclude files
+include:                               # 需要包含的文件/目录
+exclude:                               # 需要排除的文件/目录
+ignore:                                # 忽略的文件/目录
+
+# Extensions
+theme: vivia                           # 主题设置
+
+# Deployment
+deploy: # 部署设置
+  type: git                            # 使用git进行部署
+  repo: https://github.com/dajavv/dajavv.github.io.git
+  branch: main
+
+# A simple 404 page
+error_404:
+  enable: true
+  subtitle: "页面没有找到"
+  background:
+
+algolia:
+  applicationID: 'applicationID'
+  apiKey: 'apiKey'
+  indexName: '...'
+
+
+filter_optimize:
+  enable: true # 是否启用优化过滤器
+  remove_comments: false # 是否移除捆绑文件中的注释
+  css:
+    minify: true # 是否压缩所有的CSS文件
+  bundle: true # 是否将加载的CSS文件捆绑成一个文件
+  delivery: true # 是否使用脚本块动态加载CSS元素
+  inlines: # 是否将特定的CSS内容内联到HTML页面中
+  excludes:
+    js:
+    minify: false # 是否压缩所有的JS文件
+    bundle: true # 是否将加载的JS文件捆绑成一个文件
+    excludes:
+  priority: 12 # 设置此插件的优先级，较低的值表示它将首先执行，默认值为10
