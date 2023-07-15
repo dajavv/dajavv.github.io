@@ -1,0 +1,7 @@
+<%
+  let bannerUrl = theme.banner.url;
+%>
+<div id="banner" class="<% if (is_home()) { %> is_home <% } %>"><!--横幅-->
+  <img src="<%- url_for(bannerUrl) %>" itemprop="image">
+  <div id="banner-dim"></div><!--计划在这添加打字效果-->
+</div>
